@@ -1,2 +1,24 @@
+body{
+	display:flex;
+	justify-content: space-between;
+}
 
-/* Your CSS Code here. */
+.three{
+	width:100px;
+	height:100px;
+	background-color:green;
+	text-align:center;
+}
+
+.one{
+	width:100px;
+	height:100px;
+	background-color:red;
+	text-align:center;
+}
+.two{
+	width:100px;
+	height:100px;
+	background-color:blue;
+	text-align:center;
+}
