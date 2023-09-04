@@ -1,24 +1,40 @@
-.holder{
-	display:flex;
-	justify-content: space-between;
+.holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.three{
-	width:100px;
-	height:100px;
-	background-color:green;
-	text-align:center;
+.holder > div {
+  margin: 5px;
 }
 
-.one{
-	width:100px;
-	height:100px;
-	background-color:red;
-	text-align:center;
+.three,
+.one,
+.two {
+  flex-basis: calc(33.33% - 10px);
+  min-width: 100px; 
+  max-width: 100px; 
+  height: 100px;
+  text-align: center;
 }
-.two{
-	width:100px;
-	height:100px;
-	background-color:blue;
-	text-align:center;
+
+.three {
+  background-color: green;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: blue;
+}
+
+/* Ensure that the first and last items touch the ends of the container */
+.holder > .one:first-child {
+  margin-left: 0;
+}
+
+.holder > .three:last-child {
+  margin-right: 0;
 }
